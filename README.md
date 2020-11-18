@@ -5,3 +5,11 @@
 
 #### ON THE STABILITY OF FINE-TUNING BERT: MISCONCEPTIONS,EXPLANATIONS, AND STRONG BASELINES
 探索bert在微调时为什么为不稳定，主要原因是梯度遗忘和数据集太小。解决方法是：1、使用更小的学习率以及bias更正；2、延长迭代次数，直到训练loss接近0。另外对不同的模型使用了不同的超参数，比如albert就不需要dropout
+
+#### ON THE STABILITY OF FINE-TUNING BERT: MISCONCEPTIONS,EXPLANATIONS, AND STRONG BASELINES
+bert微调不稳定性研究
+
+#### DELIGHT: DEEP AND LIGHT-WEIGHT TRANSFORMER
+轻量化transformer模块可降低2到3倍的参数量
+
+
