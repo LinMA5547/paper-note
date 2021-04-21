@@ -68,3 +68,6 @@ moco v3 解决大batch vit训练不稳定问题
 
 #### SimCSE: Simple Contrastive Learning of Sentence Embeddings
 利用对比学习，学习句子表征。提出了监督和无监督两种方法，其中无监督用的是dropout进行文本扩充，比其他文本扩充方式效果更好，感觉挺有用。
+
+#### Search-oriented Differentiable Product Quantization
+可学习pq量化，里面对比了多种pq效果
