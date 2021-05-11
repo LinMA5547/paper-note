@@ -71,3 +71,9 @@ moco v3 解决大batch vit训练不稳定问题
 
 #### Search-oriented Differentiable Product Quantization
 可学习pq量化，里面对比了多种pq效果
+
+#### Extract then Distill: Efficient and EffectiveTask-Agnostic BERT Distillation
+根据神经元重要度进行宽度降维，然后进行【0 n/m 2n/m ... n】层对应蒸馏。
+
+#### DefSent: Sentence Embeddings using Definition Sentences
+用词典的词定义句预测被定义的词，挺有意思的一个思路，值得尝试
