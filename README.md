@@ -77,3 +77,7 @@ moco v3 解决大batch vit训练不稳定问题
 
 #### DefSent: Sentence Embeddings using Definition Sentences
 用词典的词定义句预测被定义的词，挺有意思的一个思路，值得尝试
+
+
+#### ConSERT: A Contrastive Framework for Self-Supervised SentenceRepresentation Transfer
+也是对比学习，学习句子表征，效果不如SimCSE
