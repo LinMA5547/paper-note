@@ -80,4 +80,4 @@ moco v3 解决大batch vit训练不稳定问题
 
 
 #### ConSERT: A Contrastive Framework for Self-Supervised SentenceRepresentation Transfer
-也是对比学习，学习句子表征，效果不如SimCSE
+也是对比学习，学习句子表征，效果不如SimCSE. 扩充方式包括了对抗攻击，token丢弃，输入特征丢弃（128维，丢弃其中几维），位置编码shuffle，输入特征dropout
