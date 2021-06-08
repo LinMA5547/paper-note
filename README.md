@@ -81,3 +81,16 @@ moco v3 解决大batch vit训练不稳定问题
 
 #### ConSERT: A Contrastive Framework for Self-Supervised SentenceRepresentation Transfer
 也是对比学习，学习句子表征，效果不如SimCSE. 扩充方式包括了对抗攻击，token丢弃，输入特征丢弃（128维，丢弃其中几维），位置编码shuffle，输入特征dropout
+
+#### on layer normalization in the transformer architecture
+pre-ln
+
+
+#### PRE-TRAININGTASKSFOREMBEDDING-BASEDLARGE-SCALERETRIEVAL
+双塔表征模型预训练，wiki数据，query：某一段落，正样本：段落中的某一句子，弱相关：同一文章中的其他段落的某一句子，不相关：该文章中链接的其他文章的某一句子；同时加入MLM
+
+#### Pre-training Universal Language Representation
+表征模型，满足 伦敦是+英国的首都=伦敦是英国的首都
+
+#### ERNIE-Tiny : A Progressive Distillation Frameworkfor Pretrained Transformer Compression
+多阶段知识蒸馏，1、在通用数据上用attention score蒸馏预训练教师模型，2、在通用数据上用attention score蒸馏微调后教师模型，3、在任务数据上用attention score蒸馏微调后教师模型，4、在任务数据上用attention score、soft label、hard label蒸馏微调后教师模型。目前看效果不错
