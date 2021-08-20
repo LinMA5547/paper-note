@@ -94,3 +94,30 @@ pre-ln
 
 #### ERNIE-Tiny : A Progressive Distillation Frameworkfor Pretrained Transformer Compression
 多阶段知识蒸馏，1、在通用数据上用attention score蒸馏预训练教师模型，2、在通用数据上用attention score蒸馏微调后教师模型，3、在任务数据上用attention score蒸馏微调后教师模型，4、在任务数据上用attention score、soft label、hard label蒸馏微调后教师模型。目前看效果不错
+
+#### Parameter-efficient Multi-task Fine-tuning for Transformersvia Shared Hypernetworks
+多任务学习，只调整骨干网络的ln和adapter，以及task embedding，glue上有效果，但是不明显，few shot上效果明显，打比赛可用
+
+#### EL-Attention: Memory Efficient Lossless Attention for Generation
+用计算换显存下降，提升decoder的速度，而且提速很明显。但是对于batchsize=1的情况下可能加速效果不理想
+
+#### Self-Guided Contrastive Learning for BERT Sentence Representations
+无需数据扩充的对比学习，让cls向量逼近预训练好的BERT的隐藏层组合
+
+#### Self-Tuning for Data-Efficient Deep Learning
+类似自训练，但是是把伪标签中同标签的看做正例，不同标签的看做负例。看起来效果不错
+
+#### Neural Graph Matching Networks for Chinese Short Text Matching
+利用图神经网络做语义匹配，将不同的分词粒度构成一个图，在bert输出层进行图表征计算
+
+#### Composite Re-Ranking for Efficient Document Search withBERT
+加入传统匹配特征和表征模型一起训练
+
+#### End-to-End Neural Ad-hoc Ranking with Kernel Pooling
+多级核匹配函数，
+
+#### Pretrained Transformers for Text Ranking:BERT and Beyond
+文本排序预训练模型
+
+#### High-Performance Large-Scale Image Recognition Without Normalization
+去掉BN，将归一化放到卷积。提出自动梯度裁剪，ACG，对模型的效果影响较大，batchsize越大ACG的超参数要越小。在imagenet上取得了sort，并且速度较快
