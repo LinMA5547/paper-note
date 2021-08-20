@@ -121,3 +121,6 @@ pre-ln
 
 #### High-Performance Large-Scale Image Recognition Without Normalization
 去掉BN，将归一化放到卷积。提出自动梯度裁剪，ACG，对模型的效果影响较大，batchsize越大ACG的超参数要越小。在imagenet上取得了sort，并且速度较快
+
+#### DiscFace: Minimum Discrepancy Learning for Deep Face Recognition
+本文指出Softmax-based的方法存在过程差异（process discrepancy），即训练是用特征提取+分类器的方式，而测试的时候舍弃了分类器，这样的差异可能存在问题,这样过程差异性是Softmax-based本身的问题，Metric-based不存在该问题,定义一个位移向量叫displacement vectors，即为特征向量与类别权重的差.
